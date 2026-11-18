@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
 	<!-- главный блок страницы -->
 	<section class="hero">
 
@@ -34,8 +33,39 @@
 
 		<header class="hero__header">
 			<p class="hero__announcement">Free shipping from 50 EUR</p>
+			<nav class="hero__nav container">
+				<button id="heroMenuToggleBtn" class="hero__btn" aria-expanded="false" aria-controls="heroSlideMenu">
+					<div class="humburger-icon">
+						<span class="humburger-line"></span>
+						<span class="humburger-line"></span>
+					</div>
+					<span class="hero__menu-text">Menu</span>
+				</button>
+
+				<button id="heroSearchToggleBtn" class="hero__btn" aria-expanded="false" aria-controls="heroSearchForm">
+					<span class="hero__search-text">Search</span>
+					<svg class="hero__search-icon" viewBox="0 0 24 24">
+						<circle cx="11" cy="11" r="7"></circle>
+						<line x1="20" y1="20" x2="16.2" y2="16.2"></line>
+					</svg>
+				</button>
+			</nav>
 		</header>
 	</section>
+
+
+
+	<aside id="heroSlideMenu" class="slide" aria-label="Navigation">
+		<div class="slide__wrapper">
+			<div class="slide__header">
+				<span class="slide__header-text">navigation</span>
+				<button id="slideCloseBtn" class="slide__close-btn" type="button">
+
+				</button>
+			</div>
+		</div>
+
+	</aside>
 </body>
 
 </html>
