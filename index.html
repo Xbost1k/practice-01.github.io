@@ -55,17 +55,52 @@
 
 
 
-	<aside id="heroSlideMenu" class="slide" aria-label="Navigation">
-		<div class="slide__wrapper">
-			<div class="slide__header">
-				<span class="slide__header-text">navigation</span>
-				<button id="slideCloseBtn" class="slide__close-btn" type="button">
-
+	<aside id="heroSlideMenu" class="slide-menu" aria-label="Navigation">
+		<div class="slide-menu__section">
+			<div class="slide-menu__header">
+				<span class="slide-menu__header-title">navigation</span>
+				<button id="slideCloseBtn" class="slide-menu__close-btn" type="button">
+					<span>Close</span>
+					<svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
 				</button>
 			</div>
+			<ul class="slide-menu__list">
+				<li class="slide-menu__item">
+					<a href="#" class="slide-menu__link">
+						<span>ski touring</span>
+						<span class="slide-menu__badge">new</span>
+					</a>
+				</li>
+				<li class="slide-menu__item">
+					<a href="#" class="slide-menu__link">mountaineering</a>
+				</li>
+				<li class="slide-menu__item">
+					<a href="#" class="slide-menu__link">men</a>
+				</li>
+				<li class="slide-menu__item">
+					<a href="#" class="slide-menu__link">women</a>
+				</li>
+				<li class="slide-menu__item">
+					<a href="#" class="slide-menu__link">avalanche safety</a>
+				</li>
+				<li class="slide-menu__item">
+					<a href="#" class="slide-menu__link">equipment & packs</a>
+				</li>
+			</ul>
 		</div>
-
+		<div class="slide-menu__footer">
+			<p class="slide-menu__footer__text">Free shipping on all orders from 50 EUR</p>
+			<div class="slide-menu__footer-links">
+				<a href="#">Stores</a>
+				<a href="#">Customer Service</a>
+				<a href="#">Journal</a>
+			</div>
+		</div>
 	</aside>
+
+	<script src="javascript/script.js"></script>
 </body>
 
 </html>

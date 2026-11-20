@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-	width: 1136px;
+	width: 90%;
 	margin: 0 auto;
 	padding: 0 32px;
 }
@@ -164,4 +164,121 @@ body {
 .hero__btn:hover .hero__search-icon {
 	transform: scale(1.1);
 	stroke: #fff;
+}
+
+.slide-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 50;
+
+	max-width: 380px;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background-color: #11141c;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 40px;
+
+	transform: translateX(-100%);
+	transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-menu.open {
+	transform: translateX(0);
+}
+
+.slide-menu__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding-bottom: 32px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slide-menu__header-title {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.slide-menu__close-btn {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+
+	font-size: 1.4em;
+	color: rgba(255, 255, 255, 0.75);
+	border: none;
+	background: none;
+
+	cursor: pointer;
+}
+
+.slide-menu__close-btn:hover {
+	color: #fff;
+}
+
+.slide-menu__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	list-style: none;
+	text-transform: capitalize;
+	margin-top: 32px;
+}
+
+.slide-menu__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	text-decoration: none;
+	font-size: 2.4em;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 300;
+
+	transition: color 0.2s ease;
+}
+.slide-menu__link:hover {
+	color: #fff;
+}
+
+.slide-menu__badge {
+	font-size: 1.1rem;
+	color: #ff3b30;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.slide-menu__footer {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	padding-top: 24px;
+	font-size: 1.2em;
+	color: rgba(255, 255, 255, 0.55);
+}
+.slide-menu__footer__text {
+	margin-bottom: 12px;
+}
+
+.slide-menu__footer-links {
+	display: flex;
+	gap: 20px;
+}
+.slide-menu__footer-links a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.75);
+	transition: color 0.3s ease;
+}
+
+.slide-menu__footer-links a:hover {
+	color: #fff;
 }
