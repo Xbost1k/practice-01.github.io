@@ -42,7 +42,7 @@
 					<span class="hero__menu-text">Menu</span>
 				</button>
 
-				<button id="heroSearchToggleBtn" class="hero__btn" aria-expanded="false" aria-controls="heroSearchForm">
+				<button id="heroSearchBtn" class="hero__btn" aria-expanded="false" aria-controls="heroSearchForm">
 					<span class="hero__search-text">Search</span>
 					<svg class="hero__search-icon" viewBox="0 0 24 24">
 						<circle cx="11" cy="11" r="7"></circle>
@@ -99,6 +99,29 @@
 			</div>
 		</div>
 	</aside>
+
+	<div id="searchBar" class="search-bar" aria-label="search bar">
+		<div class="search-bar__container">
+			<div class="search-bar__input">
+				<div class="search-bar__input-group">
+					<svg class="search-bar__icon" viewBox="0 0 24 24">
+						<circle cx="11" cy="11" r="7"></circle>
+						<line x1="20" y1="20" x2="16.2" y2="16.2"></line>
+					</svg>
+					<input id="searchInput" type="text" placeholder="Search hardshell jackets, touring skis, avalanche transceivers..." class="search-bar__field">
+				</div>
+				<button id="closeSearchBtn" type="button" class="search-bar__close-btn">ESC / Close</button>
+			</div>
+			<div class="search-bar__tags">
+				<span class="search-bar__tags-text">Popular:</span>
+				<button class="search-bar__tags-btn">Eiger Free Pro</button>
+				<button class="search-bar__tags-btn">Barryvox S2</button>
+				<button class="search-bar__tags-btn">Lightweight Layers</button>
+				<button class="search-bar__tags-btn">Touring Backpacks</button>
+			</div>
+			<div id="searchResults" class="search-bar__results"></div>
+		</div>
+	</div>
 
 	<script src="javascript/script.js"></script>
 </body>
