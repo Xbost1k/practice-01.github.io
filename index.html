@@ -16,7 +16,7 @@
 <body>
 	<!-- главный блок страницы -->
 	<section class="hero">
-
+		<p class="hero__announcement">Free shipping from 50 EUR</p>
 		<div class="hero__grid">
 			<!-- левая половина -->
 			<div class="hero__bg-pane">
@@ -32,7 +32,7 @@
 		</div>
 
 		<header class="hero__header">
-			<p class="hero__announcement">Free shipping from 50 EUR</p>
+
 			<nav class="hero__nav container">
 				<button id="heroMenuToggleBtn" class="hero__btn" aria-expanded="false" aria-controls="heroSlideMenu">
 					<div class="humburger-icon">
@@ -51,6 +51,16 @@
 				</button>
 			</nav>
 		</header>
+		<div class="hero__content container">
+			<h1 class="hero__title">Go further faster</h1>
+			<p class="hero__subtitle">Go the distance with lightweight layers for real mountain conditions.</p>
+			<a class="hero__content-btn" href="#">
+				<span>Discover the new ski touring collection</span>
+				<svg class="hero__content-btn-icon" viewBox="0 0 8 10">
+					<polygon points="0,0 8,5 0,10"></polygon>
+				</svg>
+			</a>
+		</div>
 	</section>
 
 
@@ -61,7 +71,8 @@
 				<span class="slide-menu__header-title">navigation</span>
 				<button id="slideCloseBtn" class="slide-menu__close-btn" type="button">
 					<span>Close</span>
-					<svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+					<svg style="width: 16px; height: 16px;" fill="none" stroke="currentColor" stroke-width="1.5"
+						viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
 					</svg>
 				</button>
@@ -108,7 +119,9 @@
 						<circle cx="11" cy="11" r="7"></circle>
 						<line x1="20" y1="20" x2="16.2" y2="16.2"></line>
 					</svg>
-					<input id="searchInput" type="text" placeholder="Search hardshell jackets, touring skis, avalanche transceivers..." class="search-bar__field">
+					<input id="searchInput" type="text"
+						placeholder="Search hardshell jackets, touring skis, avalanche transceivers..."
+						class="search-bar__field">
 				</div>
 				<button id="closeSearchBtn" type="button" class="search-bar__close-btn">ESC / Close</button>
 			</div>
